@@ -8,18 +8,18 @@
 </head>
 <body>
     <div style="width: 50%; margin: 10% auto;">
-        <form>
+        <form id="form">
             <div class="form-group">
-                <label for="energyInput">Энергия</label>
+                <label for="energyInput">Energy</label>
                 <input class="form-control" id="energyInput" type="number" name="energy" value=50 aria-describedby="energyHelp" placeholder="Enter energy">
             </div>
             <div class="form-group">
-                <label for="squareInput">Площадь уборки</label>
+                <label for="squareInput">Cleaning area</label>
                 <input class="form-control" id="squareInput" type="number" name="square" value=45 aria-describedby="squareHelp" placeholder="Enter square">
             </div>
-            <input type="submit" class="btn btn-primary" value="Начать уборку" />
+            <input type="submit" class="btn btn-primary" value="Start cleaning"/>
         </form>
-        <p style="margin-top: 50px;">Спустя 4.5 секунды: Уборка завершена. Осталось заряда батареи: 45.5.</p>
+        <p id='p1' style="margin-top: 50px;">After 4.5 seconds: Cleaning is complete. Battery remaining: 45.5.</p>
     </div>
     <script src="./index.js" ></script>
 </body>

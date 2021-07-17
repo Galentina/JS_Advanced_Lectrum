@@ -8,14 +8,14 @@
 </head>
 <body>
     <div style="width: 50%; margin: 10% auto;">
-        <h2>Управление энергией робота</h2>
-        <form>
+        <h2>Robot energy control</h2>
+        <form id="form">
             <div class="form-group">
-                <label for="energyInput">Энергия</label>
+                <label for="energyInput">Energy</label>
                 <input class="form-control" id="energyInput" type="number" name="energy" value=50 aria-describedby="energyHelp" placeholder="Enter energy">
             </div>
-            <input type="submit" class="btn btn-primary" value="Установить количество энергии" />
-            <button class="btn btn-info">Получить количество энергии</button>
+            <input type="submit" class="btn btn-primary" value="Set the amount of energy" />
+            <button class="btn btn-info" id="pickupEnergy">Get the amount of energy</button>
         </form>
         <div style="margin-top: 50px;" class="messages">
         </div>
