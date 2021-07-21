@@ -46,6 +46,7 @@ function CleanerRobot(
     const getCleaningTime = () => cleaningSquare / CLEANING_SPEED;
     const setRestEnergy = (time) => {
         energy = energy - (ENERGY_CONSUMPTION * time)
+        if (energy < 0) energy = 0;
     };
     const onReady = () => {
         const cleaningTime = getCleaningTime();
@@ -65,7 +66,11 @@ function CleanerRobot(
 
     this.stop = (stopTime = 1) => {
         clearTimeout(timerId);
-        setRestEnergy(stopTime)
+        const cleaningTime = getCleaningTime();
+        if (cleaningTime > stopTime){
+            setRestEnergy(stopTime)
+        }
+        console.log('Completed 1')
         document.getElementById("p1").innerHTML = `Cleaning completed ahead of schedule in ${stopTime} hours. Battery charge: ${energy}`;
     }
 }

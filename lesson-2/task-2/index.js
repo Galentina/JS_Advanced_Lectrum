@@ -47,10 +47,8 @@ const developer2 = new Developer();
 
 form.onsubmit = (event) => {
     event.preventDefault();
-
     const data = new FormData(event.target);
     const task = data.get('task');
-    form.reset();
 
     const developer = data.get('developer');
     const devElement = developer === 'dev1' ? dev1 : dev2;
@@ -67,6 +65,8 @@ form.onsubmit = (event) => {
 
     devElement.innerHTML = null;
     devElement.insertAdjacentHTML('afterbegin', liElements);
+
+    document.querySelector("#taskInput").value = '';
 
     // Проверочный код
     console.log(developer1.tasks.length); // 2
