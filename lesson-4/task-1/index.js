@@ -21,7 +21,7 @@ class Customers {
     constructor(){
         this.clients = [];
     }
-    add = (client) => client.verified ? this.clients.push(client) : this.clients;
+    add = (client) => client.verified && this.clients.push(client);
     [Symbol.iterator]() {
         let i = 0;
         return {
