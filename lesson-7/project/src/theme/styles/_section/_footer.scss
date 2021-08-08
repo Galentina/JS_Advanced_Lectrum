@@ -1,0 +1,45 @@
+@import '../_var/_color';
+@import '../_mixin/_container';
+@import '../_mixin/_font';
+
+.footer {
+    background-color: $main-dark;
+    padding: 80px 0 55px;
+
+    &__container {
+        @include container;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 56px;
+    }
+
+    &__rights {
+        @include font-Pal(normal);
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.502972);
+    }
+
+    &__logo {
+        @include font-Pal-Dark(normal);
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__social-item {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-left: 8px;
+    }
+}

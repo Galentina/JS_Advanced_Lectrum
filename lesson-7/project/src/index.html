@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Medical Service</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Palanquin:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav nav__container">
+                <a class="nav__logo" href="#">Med</a>
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#">About</a></li>
+                    <li class="nav__list-item"><a href="#">Service</a></li>
+                    <li class="nav__list-item"><a href="#">Doctors</a></li>
+                    <li class="nav__list-item"><a href="#">Blog</a></li>
+                    <li class="nav__list-item"><a href="#">Contact</a></li>
+                </ul>
+
+                <button class="nav__btn">Appointment</button>
+            </nav>
+
+            <div class="header__container">
+                <div class="header__text-block">
+                    <p class="section-category">Medical</p>
+                    <h1 class="section-title">Healthcare Solutions</h1>
+                    <p class="section-text">
+                        Peep at some distant orb has power to raise and purify our thoughts like a
+                        strain of sacred music, or a noble picture.
+                    </p>
+                    <button class="section-btn">Find Doctors</button>
+                </div>
+                <div class="header__img-block">
+                    <img class="header__img" src="./img/header-img.svg" alt="" />
+                </div>
+            </div>
+        </header>
+        <section class="faq">
+            <div class="faq__container">
+                <div class="accordion">
+                    <div class="accordion__item accordion__item--open">
+                        <div class="accordion__item-header">
+                            <h2>What looked like a small patch?</h2>
+                            <svg
+                                width="8"
+                                height="12"
+                                viewBox="0 0 8 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 1.5L1.6304 0L8 6L1.6304 12L0 10.5L4.8 6L0 1.5Z"
+                                    fill="#333333"
+                                />
+                            </svg>
+                        </div>
+                        <div class="accordion__item-body">
+                            <p>
+                                Truly it was a great journey, and in it I met with many, whom to
+                                know was to love but whom never could I see again for life has not
+                                space enough.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__item-header">
+                            <h2>What looked like a small patch?</h2>
+                            <svg
+                                width="8"
+                                height="12"
+                                viewBox="0 0 8 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 1.5L1.6304 0L8 6L1.6304 12L0 10.5L4.8 6L0 1.5Z"
+                                    fill="#333333"
+                                />
+                            </svg>
+                        </div>
+                        <div class="accordion__item-body">
+                            <p>
+                                Truly it was a great journey, and in it I met with many, whom to
+                                know was to love but whom never could I see again for life has not
+                                space enough.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__item-header">
+                            <h2>What looked like a small patch?</h2>
+                            <svg
+                                width="8"
+                                height="12"
+                                viewBox="0 0 8 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 1.5L1.6304 0L8 6L1.6304 12L0 10.5L4.8 6L0 1.5Z"
+                                    fill="#333333"
+                                />
+                            </svg>
+                        </div>
+                        <div class="accordion__item-body">
+                            <p>
+                                Truly it was a great journey, and in it I met with many, whom to
+                                know was to love but whom never could I see again for life has not
+                                space enough.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__text-block">
+                    <p class="section-category">F.A.Q.</p>
+                    <h2 class="section-title section-title--small">Frequently Asked Questions</h2>
+                    <p class="section-text">
+                        Apparently we had reached a great height in the atmosphere, for the sky was
+                        a dead black.
+                    </p>
+                    <p class="section-text section-text--light">
+                        Though the gravity still dragged at him, his muscles were making great
+                        efforts to adjust. After the daily classes he no longer collapsed
+                        immediately into bed.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__form">
+                    <p class="section-category">Contact us</p>
+                    <h2 class="section-title section-title--small">Send Us a Message</h2>
+                    <form action="" method="" class="form" id="form">
+                        <input
+                            id="nameInput"
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            class="form__input"
+                        />
+                        <span id="nameInputError" class="error">Name is incorrect</span>
+
+                        <input
+                            id="emailInput"
+                            name="email"
+                            type="text"
+                            placeholder="Your email"
+                            class="form__input"
+                        />
+                        <span id="emailInputError" class="error">Email is incorrect</span>
+
+                        <textarea
+                            id="messageInput"
+                            name="message"
+                            placeholder="Your message"
+                            class="form__input form__input--textarea"
+                        ></textarea>
+                        <span id="messageInputError" class="error">Email is incorrect</span>
+                        <div>
+                            <input type="submit" />
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__map">
+                    <img src="./img/map.svg" alt="Map" />
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__header">
+                    <a class="footer__logo" href="#">Med</a>
+                    <form id="footerForm" action="" method="" class="form form--flex">
+                        <input
+                            id="footerEmailInput"
+                            name="email"
+                            type="email"
+                            placeholder="Your email"
+                            class="form__input form__input--fixed"
+                        />
+                        <span id="footerEmailInputError" class="error">Email is incorrect</span>
+                        <input type="submit" />
+                    </form>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-item"
+                            ><img src="./img/svg/facebook-logo.svg" alt=""
+                        /></a>
+                        <a href="#" class="footer__social-item"
+                            ><img src="./img/svg/twitter-logo.svg" alt=""
+                        /></a>
+                        <a href="#" class="footer__social-item"
+                            ><img src="./img/svg/insta-logo.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+                <div class="footer__footer">
+                    <p class="footer__rights">Copyright © 2021 Lectrum. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

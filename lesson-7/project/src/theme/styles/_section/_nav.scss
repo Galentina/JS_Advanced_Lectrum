@@ -1,0 +1,45 @@
+@import '../_var/_color';
+@import '../_mixin/_container';
+@import '../_mixin/_font';
+@import '../_mixin/_btn';
+
+.nav {
+    padding-top: 20px;
+
+    &__container {
+        @include container;
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__logo {
+        @include font-Pal-Dark(normal);
+        font-size: 40px;
+        line-height: 48px;
+        color: $main-dark;
+        margin-right: 38px;
+    }
+
+    &__list {
+        margin-right: auto;
+    }
+
+    &__list-item {
+        display: inline-block;
+        list-style: none;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            @include font-Pal(normal);
+            color: $main-dark;
+        }
+    }
+
+    &__btn {
+        @include btn(#f5a623);
+    }
+}

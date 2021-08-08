@@ -1,0 +1,11 @@
+@mixin font-Pal-Dark($weight, $style: normal) {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+@mixin font-Pal($weight, $style: normal) {
+    font-family: 'Palanquin', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}

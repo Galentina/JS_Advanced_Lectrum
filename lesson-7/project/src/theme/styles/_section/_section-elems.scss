@@ -1,0 +1,46 @@
+@import '../_var/_color';
+@import '../_mixin/_font';
+@import '../_mixin/_btn';
+
+.section-category {
+    @include font-Pal-Dark(normal);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $main-red;
+    margin-bottom: 17px;
+}
+
+.section-title {
+    @include font-Pal-Dark(normal);
+    font-size: 72px;
+    line-height: 80px;
+    color: $main-dark;
+    margin-bottom: 30px;
+
+    &--small {
+        font-size: 56px;
+        line-height: 64px;
+    }
+}
+
+.section-text {
+    @include font-Pal(normal);
+    font-size: 20px;
+    line-height: 32px;
+    color: $main-dark;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    &--light {
+        color: rgba(51, 51, 51, 0.501557);
+    }
+}
+
+.section-btn {
+    @include btn();
+}

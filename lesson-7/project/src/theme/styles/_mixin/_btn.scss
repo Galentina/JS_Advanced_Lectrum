@@ -1,0 +1,21 @@
+@import '../_var/_color';
+@import './_font';
+
+@mixin btn($color: $main-red) {
+    @include font-Pal-Dark(bold);
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    padding: 6px 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: $color;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        background-color: darken($color, 5%);
+    }
+}

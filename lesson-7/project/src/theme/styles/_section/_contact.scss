@@ -1,0 +1,21 @@
+@import '../_var/_color';
+@import '../_mixin/_container';
+
+.contact {
+    padding: 192px 0;
+
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+    }
+
+    &__form {
+        width: 100% / 12 * 5;
+        margin-right: 100% / 12 * 1;
+    }
+
+    &__map {
+        width: 100% / 12 * 6;
+    }
+}

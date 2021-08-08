@@ -1,0 +1,60 @@
+@import '../_var/_color';
+
+.header {
+    position: relative;
+    height: 880px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 605px;
+        height: 576px;
+        background-color: $main-red;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media screen and (min-width: 1440px) {
+            width: calc((100vw - 1440px) / 2 + 605px);
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 225px;
+        height: 200px;
+        background-color: #d0021b;
+        border-radius: 0 0 0 16px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media screen and (min-width: 1440px) {
+            width: calc((100vw - 1440px) / 2 + 225px);
+        }
+    }
+
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    &__text-block {
+        width: 100% / 12 * 4;
+    }
+
+    &__img-block {
+        width: 100% / 12 * 8;
+        position: relative;
+    }
+
+    &__img {
+        display: block;
+        width: calc(100% + 100px);
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: -100px;
+    }
+}
